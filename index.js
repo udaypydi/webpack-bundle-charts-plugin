@@ -2,40 +2,34 @@ const babar = require('babar');
 const fs = require('fs');
 const path = require('path');
 
-
-function bytesToSize(bytes) {
-  const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB']
-  if (bytes === 0) return 'n/a'
-  const i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)), 10)
-  if (i === 0) return `${bytes} ${sizes[i]}`
-  return `${(bytes / (1024 ** i)).toFixed(1)} ${sizes[i]}`
-}
-
 module.exports = class PostBuildPlugin {
     constructor(options) {
         this.options = options || {
-            sizeLimit: 3,
+            height: 10,
+            width: 40,
+            color: 'cyan'
         };
+
+        this.postBuildProcess = this.postBuildProcess.bind(this);
     }
 
-    postBuildProcess = (stats) => {
-        // this.cb();
-        const { filename } = stats.compilation.options.output;
+    postBuildProcess(stats) {
         const filePath = stats.compilation.options.output.path;
+        const { height, width, color } = this.options;
         const data = [];
-        const x = [];
-        const y = [];
         let i = 0;
 
         fs.readdir(filePath, (error, files) => {
+            if (error) throw error;
+
             files.forEach(file => {
                 const { size } = fs.statSync(path.resolve(filePath, file));
                 data.push([++i, size]);
             })
             console.log(babar(data, {
-                color: 'green',
-                width: 40,
-                height: 10,
+                color,
+                width,
+                height,
                 yFractions: 1
             }));
         });
