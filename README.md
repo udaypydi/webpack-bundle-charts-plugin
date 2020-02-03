@@ -1,4 +1,4 @@
-# Webpack Bundle Analyzer Cli
+# Webpack Cli Bundle Analyzer
 
 A webpack plugin for analysing the bundle sized in terminal. Provides a graphical representation of the bundle sizes in command line. Just install and add the plugin to the webpack plugins array and check out the magic!
 
