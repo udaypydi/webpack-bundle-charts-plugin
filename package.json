@@ -1,7 +1,7 @@
 {
   "name": "webpack-bundle-analysis-cli",
   "version": "0.1.0",
-  "description": "A webpack plugin annalyzer in command line. Can be used for webpack health checks.",
+  "description": "A webpack plugin analyzer in command line. Can be used for webpack health checks.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
