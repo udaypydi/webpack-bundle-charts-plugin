@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["webpack", "webpack-bundle-analyzer", "webpack-cli"],
-  "author": "",
+  "author": "Uday Bhaskhar",
   "license": "ISC",
   "dependencies": {
     "babar": "^0.2.0"
