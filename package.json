@@ -15,7 +15,10 @@
     "webpack-bundle-analyzer", 
     "webpack-cli",
     "bundle",
-    "webpack-analysis"
+    "webpack-analysis",
+    "plugin",
+    "webpack-plugin",
+    "webpack-devtools"
   ],
   "author": "Uday Bhaskhar <udaypydi333@gmail.com>",
   "license": "ISC",
