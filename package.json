@@ -10,8 +10,14 @@
     "type": "git",
     "url": "https://github.com/udaypydi/webpack-bundle-charts-plugin"
   },
-  "keywords": ["webpack", "webpack-bundle-analyzer", "webpack-cli"],
-  "author": "Uday Bhaskhar",
+  "keywords": [
+    "webpack", 
+    "webpack-bundle-analyzer", 
+    "webpack-cli",
+    "bundle",
+    "webpack-analysis"
+  ],
+  "author": "Uday Bhaskhar <udaypydi333@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "babar": "^0.2.0"
