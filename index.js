@@ -13,6 +13,11 @@ module.exports = class PostBuildPlugin {
         this.postBuildProcess = this.postBuildProcess.bind(this);
     }
 
+    /**
+     * Function Called after build is done and assets are compied to folder.
+     * @param {Object} stats 
+     */
+    
     postBuildProcess(stats) {
         const filePath = stats.compilation.options.output.path;
         const { height, width, color } = this.options;
@@ -34,6 +39,11 @@ module.exports = class PostBuildPlugin {
             }));
         });
     }
+
+    /**
+     * 
+     * @param {Tapable Instance} compiler 
+     */
 
     apply(compiler) {
         compiler.hooks.done.tap("PostBuildPlugin", this.postBuildProcess);
