@@ -1,6 +1,6 @@
 {
   "name": "webpack-bundle-analysis-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A webpack plugin analyzer in command line. Can be used for webpack health checks.",
   "main": "index.js",
   "scripts": {
