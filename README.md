@@ -15,9 +15,9 @@ plugins: [new WebpackBundleAnalyzer()]
 
 2. Passing options to the plugin
 ```
-const WebpackBundleAnalyzer = require('webpack-bundle-analysis-cli');
+const WebpackBundleAnalyzerCLI = require('webpack-bundle-analysis-cli');
 
-plugins: [new WebpackBundleAnalyzer({
+plugins: [new WebpackBundleAnalyzerCLI({
             height: 20,
             width: 40,
             color: 'cyan'
