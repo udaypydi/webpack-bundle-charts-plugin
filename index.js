@@ -29,7 +29,7 @@ module.exports = class PostBuildPlugin {
 
             files.forEach(file => {
                 const { size } = fs.statSync(path.resolve(filePath, file));
-                data.push([++i, size]);
+                data.push([++i, size / 1000]);
             })
             console.log(babar(data, {
                 color,
