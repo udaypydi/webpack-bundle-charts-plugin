@@ -2,6 +2,8 @@ const babar = require('babar');
 const fs = require('fs');
 const path = require('path');
 
+// Post Build Plugin for analyzing bundle sizes after the assets are emitted.
+
 module.exports = class PostBuildPlugin {
     constructor(options) {
         this.options = options || {
