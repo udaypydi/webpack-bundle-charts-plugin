@@ -5,6 +5,10 @@ const path = require('path');
 // Post Build Plugin for analyzing bundle sizes after the assets are emitted.
 
 module.exports = class PostBuildPlugin {
+    /**
+    *Constructor to initialize options.
+    *@param {Object} options.
+    */
     constructor(options) {
         this.options = options || {
             height: 10,
