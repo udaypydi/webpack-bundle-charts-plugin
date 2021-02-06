@@ -4,6 +4,10 @@ A webpack plugin for analysing the bundle sizes in terminal. Provides a graphica
 
 `npm i --save webpack-bundle-analysis-cli`
 
+or
+
+`yarn add webpack-bundle-analysis-cli`
+
 ## Examples:
 
 1. Default Options
